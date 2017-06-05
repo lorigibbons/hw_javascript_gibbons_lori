@@ -1,40 +1,27 @@
-var iceCream = ['Pineapple', 'Cookies and Cream', 'Cookie Dough'];
+//function declaration
+function howdy() {
+    return 'Howdy, I am Lori Gibbons';
+}
+var message = howdy();
+console.log(message);
 
-iceCream.push('Coffee');
+//function expression
+prompt('Please type in a word to measure the length.');
 
-var presidents1 = {
-    firstName: 'Donald',
-    lastName: 'Trumpf',
-    termLength: 4,
-    party: 'Republican',
-    yearsOfPresidency: 0
+var numba = function (string) {
+    if (string.length < 7) {
+        console.log('What a short little word!');
+    }
+    else if (string.length > 7) {
+        console.log("I'm sorry, but that's too many to count.");
+    }
+    else if (string.length === 7) {
+        console.log('7, what a perfect choice!');
+    }
 };
-var presidents2 = {
-    firstName: 'Barak',
-    lastName: 'Obama',
-    termLength: 4,
-    party: 'Democrat',
-    yearsOfPresidency: 8
-};
-var presidents3 = {
-    firstName: 'George W.',
-    lastName: 'Bush',
-    termLength: 4,
-    party: 'Republican',
-    yearsOfPresidency: 8
-};
-var presidents4 = {
-    firstName: 'Bill',
-    lastName: 'Clinton',
-    termLength: 4,
-    party: 'Democrat',
-    yearsOfPresidency: 4
-};
-var presidents5 = {
-    firstName: 'George',
-    lastName: 'Bush Sr.',
-    termLength: 4,
-    party: 'Republican',
-    yearsOfPresidency: 8
-};
-var presidents = [presidents1, presidents2, presidents3, presidents4, presidents5];
+
+function inception(display, favMovie) {
+    return display + favMovie;
+}
+var movieMessage = inception('Stranger Than Fiction', ' is a fantastic movie.');
+console.log(movieMessage);
