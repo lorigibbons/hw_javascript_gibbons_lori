@@ -38,3 +38,5 @@ var presidents5 = {
     yearsOfPresidency: 8
 };
 var presidents = [presidents1, presidents2, presidents3, presidents4, presidents5];
+
+console.log(presidents);
